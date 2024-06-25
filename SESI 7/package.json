@@ -1,0 +1,14 @@
+{
+  "name": "sesi-7",
+  "version": "1.0.0",
+  "description": "SESI 7 BACKEND",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "asdasdasd"
+  ],
+  "author": "SERVA",
+  "license": "ISC"
+}

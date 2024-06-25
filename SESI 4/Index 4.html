@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="flex justify-center items-center min-h-screen w-full bg-blue-500 gap-2">
+
+    <div class=" flex flex-col gap-2">
+      <img src="Assets/off.gif" alt="" id="k1" />
+      <h5>saya mencari penerangan hidup</h5>
+      <button onclick="saklar('hurung')">⬆️</button>
+      <button onclick="saklar('paeh')">⬇️</button>
+    </div>
+    <div class=" flex flex-col gap-2">
+      <img src="Assets/Closed.png" alt="" id="k1" />
+      <h5>saya mencari penerangan hidup</h5>
+      <button onclick="saklar('hurung')">⬆️</button>
+      <button onclick="saklar('paeh')">⬇️</button>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <script>
+    function saklar(params) {
+      console.log(params)
+
+      let k1 = document.getElementById('k1')
+
+      if (params == "hurung") {
+        k1.src = "Assets/on.gif"
+      }
+      if (params == "paeh") {
+        k1.src = "Assets/off.gif"
+      }
+
+      return k1;
+    }
+  </script>
+
+</body>
+</html>
